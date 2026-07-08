@@ -1,0 +1,17 @@
+[
+  {
+    "type": "valid",
+    "email": "muhindhar271@gmail.com",
+    "password": "12345678"
+  },
+  {
+    "type": "invalidEmail",
+    "email": "invalidgmail.com",
+    "password": "123456789"
+  },
+  {
+    "type": "wrongPassword",
+    "email": "muhindhar271@gmail.com",
+    "password": "1234567"
+  }
+]

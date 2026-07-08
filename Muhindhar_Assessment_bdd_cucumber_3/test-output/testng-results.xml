@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-13T16:41:28 IST" name="Default suite" finished-at="2026-05-13T16:41:48 IST" duration-ms="20301">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SearchRunner@74f6c5d8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-05-13T16:41:28 IST" name="Default test" finished-at="2026-05-13T16:41:48 IST" duration-ms="20301">
+      <class name="com.runner.SearchRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.SearchRunner@74f6c5d8]" started-at="2026-05-13T16:41:28 IST" name="setUpClass" finished-at="2026-05-13T16:41:28 IST" duration-ms="472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@43ab0659]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SearchRunner@74f6c5d8]" started-at="2026-05-13T16:41:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-13T16:41:35 IST" duration-ms="6681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verif to add new address"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Muhindhar_13-05-2026_Adding new address in the tutorials ninja site"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SearchRunner@74f6c5d8]" started-at="2026-05-13T16:41:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-13T16:41:39 IST" duration-ms="4406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify product search using different keywords"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Muhindhar_13-05-2026_searching product in website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SearchRunner@74f6c5d8]" started-at="2026-05-13T16:41:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-13T16:41:44 IST" duration-ms="4342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify product search using different keywords"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Muhindhar_13-05-2026_searching product in website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.SearchRunner@74f6c5d8]" started-at="2026-05-13T16:41:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-13T16:41:47 IST" duration-ms="3294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify product search using different keywords"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Muhindhar_13-05-2026_searching product in website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.SearchRunner@74f6c5d8]" started-at="2026-05-13T16:41:47 IST" name="tearDownClass" finished-at="2026-05-13T16:41:48 IST" duration-ms="1066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.runner.SearchRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

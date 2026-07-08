@@ -1,0 +1,155 @@
+[
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "process",
+        "kind": 2,
+        "importPath": "Assessment-1.data_processor",
+        "description": "Assessment-1.data_processor",
+        "peekOfCode": "def process(email):\n    username = email.split(\"@\")[0]\n    domain = email.split(\"@\")[1]\n    print(\"Username :\", username)\n    print(\"Domain :\", domain)",
+        "detail": "Assessment-1.data_processor",
+        "documentation": {}
+    },
+    {
+        "label": "invalidfield",
+        "kind": 6,
+        "importPath": "Assessment-1.data_validator",
+        "description": "Assessment-1.data_validator",
+        "peekOfCode": "class invalidfield(Exception):\n    pass\ndef validmail(email):\n    if re.fullmatch(r\"[a-zA-Z0-9._]+@[a-zA-Z0-9._]+\\.[a-zA-Z]{2,5}\",email):\n        print(\"Valid email\")\n    else:\n        raise invalidfield(\"Invalid email\")\ndef validphone(phone):\n    if re.fullmatch(r\"[6-9]\\d{9}\",phone):\n        print(\"Valid phone number\")",
+        "detail": "Assessment-1.data_validator",
+        "documentation": {}
+    },
+    {
+        "label": "validmail",
+        "kind": 2,
+        "importPath": "Assessment-1.data_validator",
+        "description": "Assessment-1.data_validator",
+        "peekOfCode": "def validmail(email):\n    if re.fullmatch(r\"[a-zA-Z0-9._]+@[a-zA-Z0-9._]+\\.[a-zA-Z]{2,5}\",email):\n        print(\"Valid email\")\n    else:\n        raise invalidfield(\"Invalid email\")\ndef validphone(phone):\n    if re.fullmatch(r\"[6-9]\\d{9}\",phone):\n        print(\"Valid phone number\")\n    else:\n        raise invalidfield(\"Invalid phone number\")",
+        "detail": "Assessment-1.data_validator",
+        "documentation": {}
+    },
+    {
+        "label": "validphone",
+        "kind": 2,
+        "importPath": "Assessment-1.data_validator",
+        "description": "Assessment-1.data_validator",
+        "peekOfCode": "def validphone(phone):\n    if re.fullmatch(r\"[6-9]\\d{9}\",phone):\n        print(\"Valid phone number\")\n    else:\n        raise invalidfield(\"Invalid phone number\")\ndef validusername(name):\n    if re.fullmatch(r\"25MCA\\d{3}\", name):\n        print(\"Valid usn\")\n    else:\n        print(\"Invalid usn\")",
+        "detail": "Assessment-1.data_validator",
+        "documentation": {}
+    },
+    {
+        "label": "validusername",
+        "kind": 2,
+        "importPath": "Assessment-1.data_validator",
+        "description": "Assessment-1.data_validator",
+        "peekOfCode": "def validusername(name):\n    if re.fullmatch(r\"25MCA\\d{3}\", name):\n        print(\"Valid usn\")\n    else:\n        print(\"Invalid usn\")",
+        "detail": "Assessment-1.data_validator",
+        "documentation": {}
+    },
+    {
+        "label": "nostud",
+        "kind": 5,
+        "importPath": "Assessment-1.Student_Grade",
+        "description": "Assessment-1.Student_Grade",
+        "peekOfCode": "nostud = int(input(\"Enter the number of students : \"))\nfor i in range(nostud):\n    num = input(\"enter the number : \")\n    mark = int(input(\"Enter the marks : \"))\n    student[num] =mark\nmaxmark = max(student.values())\nminmark = min(student.values())\nfor num, mark in student.items():\n    if mark == maxmark:\n        print(\"Maximum Marks :\", maxmark, \"-\",num)",
+        "detail": "Assessment-1.Student_Grade",
+        "documentation": {}
+    },
+    {
+        "label": "maxmark",
+        "kind": 5,
+        "importPath": "Assessment-1.Student_Grade",
+        "description": "Assessment-1.Student_Grade",
+        "peekOfCode": "maxmark = max(student.values())\nminmark = min(student.values())\nfor num, mark in student.items():\n    if mark == maxmark:\n        print(\"Maximum Marks :\", maxmark, \"-\",num)\nfor usn, mark in student.items():\n    if mark == minmark:\n        print(\"Minimum Marks :\", minmark, \"-\",num)\ndistin = []\nmerit=[]",
+        "detail": "Assessment-1.Student_Grade",
+        "documentation": {}
+    },
+    {
+        "label": "minmark",
+        "kind": 5,
+        "importPath": "Assessment-1.Student_Grade",
+        "description": "Assessment-1.Student_Grade",
+        "peekOfCode": "minmark = min(student.values())\nfor num, mark in student.items():\n    if mark == maxmark:\n        print(\"Maximum Marks :\", maxmark, \"-\",num)\nfor usn, mark in student.items():\n    if mark == minmark:\n        print(\"Minimum Marks :\", minmark, \"-\",num)\ndistin = []\nmerit=[]\npassmark=[]",
+        "detail": "Assessment-1.Student_Grade",
+        "documentation": {}
+    },
+    {
+        "label": "distin",
+        "kind": 5,
+        "importPath": "Assessment-1.Student_Grade",
+        "description": "Assessment-1.Student_Grade",
+        "peekOfCode": "distin = []\nmerit=[]\npassmark=[]\nfail=[]\nfor num,mark in student.items():\n    if(mark>=86 and mark<=100):\n        distin.append(num)\n    elif(mark>=76 and mark<=85):\n        merit.append(num)\n    elif(mark>=60 and mark<=75):",
+        "detail": "Assessment-1.Student_Grade",
+        "documentation": {}
+    },
+    {
+        "label": "avg",
+        "kind": 5,
+        "importPath": "Assessment-1.Student_Grade",
+        "description": "Assessment-1.Student_Grade",
+        "peekOfCode": "avg = tot/len(student)\nprint(\"Average marks: \",avg)\nprint(\"Below Average Students\")\nfor num, mark in student.items():\n    if mark<avg:\n        print(num)\nmarks = list(student.values())\nmarks.sort(reverse=True)\nprint(\"Leaderboard\")\nfor mark in marks:",
+        "detail": "Assessment-1.Student_Grade",
+        "documentation": {}
+    },
+    {
+        "label": "marks",
+        "kind": 5,
+        "importPath": "Assessment-1.Student_Grade",
+        "description": "Assessment-1.Student_Grade",
+        "peekOfCode": "marks = list(student.values())\nmarks.sort(reverse=True)\nprint(\"Leaderboard\")\nfor mark in marks:\n    for usn in student:\n        if student[usn] == mark:\n            print(usn, \":\", mark)",
+        "detail": "Assessment-1.Student_Grade",
+        "documentation": {}
+    },
+    {
+        "label": "person",
+        "kind": 6,
+        "importPath": "Assessment-1.TraineePerformance",
+        "description": "Assessment-1.TraineePerformance",
+        "peekOfCode": "class person:\n    def __init__(self, name, age, email):\n        self.name = name\n        self.age = age\n        self.email = email\n    def display(self):\n        print(\"Name :\", self.name)\n        print(\"Age :\", self.age)\n        print(\"Email :\", self.email)\nclass trainee(person):",
+        "detail": "Assessment-1.TraineePerformance",
+        "documentation": {}
+    },
+    {
+        "label": "trainee",
+        "kind": 6,
+        "importPath": "Assessment-1.TraineePerformance",
+        "description": "Assessment-1.TraineePerformance",
+        "peekOfCode": "class trainee(person):\n    def __init__(self, name, age, email, batchid, marks, project, public):\n        super().__init__(name, age, email)\n        self.batchid = batchid\n        self.marks = marks\n        self.project = project\n        self.public = public\n    def display(self):\n        super().display()\n        print(\"Batch ID :\", self.batchid)",
+        "detail": "Assessment-1.TraineePerformance",
+        "documentation": {}
+    },
+    {
+        "label": "SDETtrainee",
+        "kind": 6,
+        "importPath": "Assessment-1.TraineePerformance",
+        "description": "Assessment-1.TraineePerformance",
+        "peekOfCode": "class SDETtrainee(trainee):\n    def __init__(self, name, age, email, batchid, marks, project, public, tools):\n        super().__init__(name, age, email, batchid, marks, project, public)\n        self.tools = tools\n    def comp_agg(self):\n        avg = sum(self.marks) / len(self.marks)\n        return (avg * 0.6) + (self.project * 5) + (self.public * 3)\ntrainees = []\nfor i in range(2): \n    print(\"Enter Trainee\", i + 1)",
+        "detail": "Assessment-1.TraineePerformance",
+        "documentation": {}
+    },
+    {
+        "label": "trainees",
+        "kind": 5,
+        "importPath": "Assessment-1.TraineePerformance",
+        "description": "Assessment-1.TraineePerformance",
+        "peekOfCode": "trainees = []\nfor i in range(2): \n    print(\"Enter Trainee\", i + 1)\n    name = input(\"Enter the Name : \")\n    age = int(input(\"Enter Age : \"))\n    email = input(\"Enter the Email : \")\n    batch = input(\"Batch : \")\n    marks = [int(input(\"Mark : \")) for i in range(5)]\n    projects = int(input(\"Projects : \"))\n    publications = int(input(\"Publications : \"))",
+        "detail": "Assessment-1.TraineePerformance",
+        "documentation": {}
+    },
+    {
+        "label": "highest",
+        "kind": 5,
+        "importPath": "Assessment-1.TraineePerformance",
+        "description": "Assessment-1.TraineePerformance",
+        "peekOfCode": "highest = trainees[0]\nfor t in trainees:\n    print(\"Details\")\n    t.display()\n    print(\"Tool :\", t.tools)\n    print(\"Aggregate :\",(t.comp_agg()))\n    if t.comp_agg()>highest.comp_agg():\n        highest = t\nprint(\"Highest aggregate trainee\")\nprint(\"Name : \",highest.name)",
+        "detail": "Assessment-1.TraineePerformance",
+        "documentation": {}
+    }
+]

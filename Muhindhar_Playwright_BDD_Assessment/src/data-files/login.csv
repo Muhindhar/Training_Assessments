@@ -1,0 +1,5 @@
+type,email,password,message
+valid,MUHISV27@GMAIL.COM,123456789,MUHISV27@GMAIL.COM
+invalidpass,MUHISV27@GMAIL.COM,12345678,Login was unsuccessful. Please correct the errors and try again. The credentials provided are incorrect
+invalidemail,MUHISV2@GMAIL.COM,123456789,Login was unsuccessful. Please correct the errors and try again. No customer account found
+bothinvalid,MUHISV2@GMAIL.COM,12345678,Login was unsuccessful. Please correct the errors and try again. No customer account found
